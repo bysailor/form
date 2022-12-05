@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./dark.css">
+</head>
+
+<body>
+    <style>
+        .para {
+            aspect-ratio: 1/1;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .switch {
+            margin: 25%;
+        }
+        .raver {
+            transform: rotate(-90deg);
+            scale: 1.5;
+        }
+        .ravin {
+            transform: scaleY(-1);
+        }
+        .cot {
+            flex: 80%;
+        }
+    </style>
+    <form action="http://nsi.lycee-mariecurie.org" method="POST">
+        <div>
+            <div class="cota">
+                <fieldset class="cot">
+                    <legend class="fstl">General :</legend>
+                    <label> <span class="langue">Nom :</span></label>
+                    <input type="text" name="nom" required="required" placeholder="Votre nom">
+                    <label class="fsta"> <span class="langue">Age :</span></label>
+                    <input type="number" name="age" required="required" placeholder="Votre age">
+                </fieldset>
+                <fieldset class="coti">
+                    <legend>Settings :</legend>
+                    <div class="para">
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="ravin">
+                            <div class="raver">
+                            <input type="range">
+                        </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Préférences :</legend>
+                <h3>Langue préférée :</h3>
+                <label> <span class="langue">Anglais</span><input type="radio" name="langue" checked="checked"
+                        value="anglais"></label>
+
+                <label> <span class="langue">Allemand</span><input type="radio" name="langue" value="allemand"></label>
+
+                <label> <span class="langue">Italien</span><input type="radio" name="langue" value="italien"></label>
+
+                <label> <span class="langue">Espagnol</span><input type="radio" name="langue" value="espagnol"></label>
+
+                <h3>Matières préférées :</h3>
+
+                <label> <span class="langue">Français</span><input type="checkbox" name="matiere"
+                        value="françcis"></label>
+
+                <label> <span class="langue">Histoire-Géographie</span><input type="checkbox" name="matiere"
+                        value="histoire"></label>
+
+                <label> <span class="langue">Langue</span><input type="checkbox" name="matiere" value="langue"></label>
+
+                <label> <span class="langue">Mathématiques</span><input type="checkbox" name="matiere"
+                        value="maths"></label>
+
+                <label> <span class="langue">Physique-Chimie</span><input type="checkbox" name="matiere"
+                        value="physique"></label>
+
+                <label> <span class="langue">SVT</span><input type="checkbox" name="matiere" value="svt"></label>
+
+                <label> <span class="langue">NSI</span><input type="checkbox" name="matiere" value="nsi"></label>
+
+                <label> <span class="langue">HGGSP</span><input type="checkbox" name="matiere" value="hggsp"></label>
+                <label> <span class="langue">Philosophie</span><input type="checkbox" name="matiere"
+                        value="philo"></label>
+                <label> <span class="langue">AMC</span><input type="checkbox" name="matiere" value="amc"></label>
+                <label> <span class="langue">EMC</span><input type="checkbox" name="matiere" value="emc"></label>
+                <h3>Aimez-vous votre classe ?</h3>
+                <label> 0<input type="range" name="ilike" min="0" max="10" class="range">10</label>
+                <h3>Un message à faire passer ?</h3s>
+                    <label> <input type="text" name="message"></label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Questionnaire :</legend>
+                <h3>Ambiance :</h3>
+                <label> <span class="langue">Très bonne</span><input type="radio" name="ambiance" checked="checked"
+                        value="excellent"></label>
+                <label> <span class="langue">Bonne</span><input type="radio" name="ambiance" value="bon"></label>
+                <label> <span class="langue">Moyenne</span><input type="radio" name="ambiance" value="moyen"></label>
+                <label> <span class="langue">Mauvaise</span><input type="radio" name="ambiance" value="mauvais"></label>
+                <h3>Difficultés :</h3>
+                <label> <span class="langue">Oui</span><input type="radio" value="oui" name="diff"></label>
+                <label> <span class="langue">Non</span><input type="radio" value="non" name="diff"
+                        checked="checked"></label>
+                <h3>Enseignements de spécialité choisis :</h3>
+                <label> <span class="langue">Mathématiques</span><input type="checkbox" name="spe"
+                        value="maths"></label>
+                <label> <span class="langue">Physique-Chimie</span><input type="checkbox" name="spe"
+                        value="physique"></label>
+                <label> <span class="langue">SVT</span><input type="checkbox" name="spe" value="svt"></label>
+                <label> <span class="langue">NSI</span><input type="checkbox" name="spe" value="nsi"></label>
+                <label> <span class="langue">HGGSP</span><input type="checkbox" name="spe" value="hggsp"></label>
+                <label> <span class="langue">Philosophie</span><input type="checkbox" name="spe" value="philo"></label>
+                <label> <span class="langue">AMC</span><input type="checkbox" name="spe" value="amc"></label>
+            </fieldset>
+            </span>
+        </div>
+    </form>
+</body>
+
+</html>

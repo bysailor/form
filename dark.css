@@ -1,0 +1,264 @@
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            color: gray;
+            margin: 2%;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(28, 28, 28);
+        }
+
+        form {
+            display: flex;
+        }
+
+        input {
+            transition: box-shadow 0.25s;
+            margin-left: auto;
+            border: 0px;
+            border-radius: 10px;
+            background: rgb(30, 29, 29);
+            background: linear-gradient(to right, rgb(20, 20, 20), rgb(35,35,35));
+            box-shadow: inset 2px 2px 5px 0px black,
+                inset 0px 0px 0px 0px rgba(255,255,255, 0.07),
+                2px 2px 5px -2px rgba(0,0,0,0.3),
+                -2px -2px 5px 0px rgba(255,255,255, 0.3);
+            padding: 1% 2%;
+        }
+
+        input:checked {
+            transition: box-shadow 0.25s;
+            background: linear-gradient(to right, rgb(133, 207, 98), rgb(69, 204, 64));
+            box-shadow: inset -2px -2px 9px -2px rgba(0,0,0,0.3),
+                inset -2px -2px 5px 0px rgba(255,255,255, 0.3),
+                0px 0px 0px 0px black,
+                0px 0px 0px 0px black;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            border: 0px;
+            appearance: none;
+        }
+
+        input[type=range] {
+            padding: 0% 1%;
+            height: 21px;
+            appearance: none;
+            width: 85%;
+            box-shadow: inset 2px 2px 5px 0px black,
+                inset 0px 0px 0px 0px rgba(255,255,255, 0.07),
+                2px 2px 5px -2px rgba(0,0,0,0.3),
+                -2px -2px 0px 0px rgba(255,255,255, 0);
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            height: 15px;
+            width: 15px;
+            border-radius: 14px;
+            cursor: pointer;
+            appearance: none;
+            margin-top: 0px;
+            background: linear-gradient(to right, rgb(133, 207, 98), rgb(69, 204, 64));
+        }
+
+        input:hover {
+            cursor: pointer;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        div:first-child {
+            margin-right: 1%;
+        }
+
+        div:last-child {
+            margin-left: 1%;
+        }
+
+        fieldset {
+            margin: 3% 5%;
+            padding: 3%;
+            border-radius: 15px;
+            border: 0;
+            background: rgb(27,27,27);
+            box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.3),
+                -4px -4px 9px 0px rgba(155, 155, 155, 0.2);
+        }
+
+        label {
+            margin: 1% 0%;
+            display: flex;
+        }
+
+        legend {
+            position: relative;
+            top: 25px;
+            margin-bottom: 2%;
+        }
+
+        h3 {
+            margin-top: 3%;
+        }
+
+        .langue {
+            display: inline-block;
+        }
+
+        .range {
+            margin-left: auto;
+            margin-right: auto;
+            border: 0ch;
+            width: 90%;
+            cursor: pointer;
+        }
+
+        legend {
+            font-size: larger;
+        }
+
+        input::placeholder {
+            color: dark gray;
+        }
+
+        input[type=number],
+        input[type=text] {
+            padding: 2%;
+            cursor: text;
+            outline: 0;
+            box-shadow:  2px 2px 5px -2px rgba(255,255,255, 0.3),
+                 -2px -2px 5px 0px rgba(0,0,0);
+        }
+
+        .submit {
+            animation: submiti 0.25s;
+            box-shadow: 0px 0px 10px rgba(255,255,255, 0.146);
+            padding: 3%;
+            border-radius: 10px;
+            border: 0;
+            background-color: rgb(55, 59, 54);
+            font-size: large;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            animation: submit 0.25s;
+            background-color: rgb(58, 67, 55);
+            scale: 1.1;
+        }
+
+
+        @keyframes submiti {
+            0% {
+                background-color: rgb(58, 67, 55);
+                scale: 1.1;
+            }
+
+            100% {
+                background-color: rgb(55, 59, 54);
+                scale: 1;
+            }
+        }
+
+        @keyframes submit {
+            0% {
+                background-color: rgb(55, 59, 54);
+                scale: 1;
+            }
+
+            100% {
+                background-color: rgb(58, 67, 55);
+                scale: 1.1;
+            }
+        }
+        .cota {
+            display: flex;
+            width: 100%;
+        }
+
+        .start {
+            margin: 0%;
+            display: block;
+            flex: auto;
+            margin-right: 2%;
+        }
+
+        .end {
+            align-items: center;
+            aspect-ratio: 1 / 1;
+            display: block;
+            margin: 0%;
+            margin-left: 2%;
+            right: 0%;
+            flex: 1%;
+        }
+
+        .fstl {
+            margin-bottom: 6%;
+        }
+
+        .fsta {
+            margin-top: 3%;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: black;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #3ce580;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
